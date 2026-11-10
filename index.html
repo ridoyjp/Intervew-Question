@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102f46">
+  <meta name="description" content="日本企画株式会社 一次面接 練習用・重要22問（質問と回答は原文のまま）">
+  <title>一次面接 練習｜日本企画株式会社｜重要22問</title>
+  <style>
+  :root{--navy:#102f46;--navy2:#173d59;--teal:#0d938b;--teal-light:#ddf5ef;--ink:#1b3141;--mute:#6a7e8d;--outline:#dce5ea;--bg:#f4f7f9;--surface:#fff;--shadow:0 10px 34px rgba(15,42,63,.08);--radius:19px}
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,"Noto Sans Bengali",sans-serif;-webkit-font-smoothing:antialiased}
+  button,input{font:inherit}
+  button{cursor:pointer}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  :focus-visible{outline:3px solid #1daea0;outline-offset:3px}
+  .wrap{max-width:1220px;margin:0 auto;padding:0 24px}
+  .hero{color:#fff;background:linear-gradient(121deg,#102e45 0%,#143b55 64%,#0c575b 100%);position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-60px;top:-180px;width:480px;height:480px;background:radial-gradient(circle,rgba(51,193,169,.2),transparent 67%);pointer-events:none}
+  .hero-inner{position:relative;z-index:1;display:flex;justify-content:space-between;gap:25px;align-items:center;padding:34px 0 38px}
+  .eyebrow{color:#90ded6;font-weight:750;font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:11px}
+  h1{font-size:clamp(22px,3vw,34px);line-height:1.36;margin:0 0 11px;letter-spacing:-.025em;font-weight:820}
+  .hero-desc{font-size:13px;color:#c9e2e7;margin:0;line-height:1.7}
+  .hero-stats{min-width:170px;border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 22px;text-align:center;background:rgba(255,255,255,.06);backdrop-filter:blur(5px)}
+  .stat-number{font-size:30px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+  .stat-label{font-size:12px;color:#b6d4d8}
+  .track{height:6px;display:block;background:rgba(255,255,255,.2);border-radius:8px;overflow:hidden;margin-top:12px}
+  .track-fill{height:100%;width:0;background:#5bd6c5;border-radius:8px;transition:width .25s}
+  .toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:20px 0 12px}
+  .pills{display:flex;gap:7px;flex-wrap:wrap}
+  .pill{border:1px solid var(--outline);color:var(--navy);border-radius:999px;background:#fff;padding:9px 13px;font-size:12px;font-weight:700;transition:.15s}
+  .pill.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .pill:hover:not(.active){border-color:#8fbeb8}
+  .toolbar-actions{display:flex;align-items:center;gap:8px}
+  .ghost{background:white;border:1px solid var(--outline);border-radius:11px;color:var(--navy);padding:9px 12px;font-size:12px;font-weight:720}
+  .ghost:hover{border-color:#92c9c3;background:#fbfffe}
+  .layout{display:grid;grid-template-columns:minmax(275px,330px) minmax(0,1fr);gap:19px;padding-bottom:22px;align-items:start}
+  .sidebar{background:var(--surface);border:1px solid var(--outline);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:sticky;top:18px;max-height:calc(100vh - 38px);display:flex;flex-direction:column}
+  .sidebar-top{padding:17px 15px 12px;border-bottom:1px solid var(--outline)}
+  .sidebar-title{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:14px;margin-bottom:11px}
+  .count{font-size:12px;color:var(--mute);font-weight:650}
+  .search{border:1px solid var(--outline);border-radius:11px;padding:11px 12px;width:100%;outline:none;color:var(--ink);background:#fafcfd;font-size:13px}
+  .search:focus{border-color:#1c9a92;background:#fff}
+  .question-list{padding:7px 7px 10px;overflow-y:auto;overscroll-behavior:contain}
+  .group-label{font-size:11px;font-weight:800;color:#61798a;padding:15px 11px 8px;border-top:1px solid #f1f4f5}
+  .group-label:first-child{border-top:0}
+  .q-entry{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:left;border:0;border-radius:12px;padding:11px 10px;background:transparent;color:#344b5b;transition:.15s}
+  .q-entry:hover{background:#f2f7f7}
+  .q-entry.active{background:#e6f5f2;color:#0b6e66}
+  .q-num{width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:#eff3f5;display:grid;place-items:center;font-size:12px;font-weight:900;color:#415b69;font-variant-numeric:tabular-nums}
+  .q-entry.active .q-num{background:#0f8b81;color:white}
+  .q-text{font-size:12px;line-height:1.6;flex:1;font-weight:650;overflow-wrap:anywhere}
+  .q-flags{font-size:14px;white-space:nowrap;flex:0 0 auto;color:#d2a24b}
+  .empty{padding:25px 12px;color:var(--mute);text-align:center;font-size:13px}
+  .study-panel{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .section-bar{background:#fff;border-radius:var(--radius);border:1px solid var(--outline);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:9px;box-shadow:0 3px 12px rgba(15,42,63,.03)}
+  .section-name{font-size:12px;font-weight:800;color:#4a7180}
+  .section-count{font-size:11px;color:var(--mute)}
+  .question-card{background:#fff;border-radius:var(--radius);border:1px solid var(--outline);padding:clamp(20px,3vw,32px);box-shadow:var(--shadow);min-height:345px}
+  .card-overline{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+  .number-chip{display:inline-flex;align-items:center;gap:5px;background:#eff5f7;padding:6px 11px;color:#406273;border-radius:8px;font-size:11px;font-weight:850}
+  .important{display:inline-flex;padding:6px 10px;border-radius:8px;color:#916522;background:#fff5df;font-weight:800;font-size:11px}
+  .question{font-size:clamp(20px,2.7vw,27px);font-weight:850;line-height:1.7;letter-spacing:-.02em;margin:0 0 25px;overflow-wrap:anywhere}
+  .answer-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px}
+  .answer-label{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:#0b8279}
+  .answer-label::before{content:"";height:16px;width:4px;border-radius:4px;background:#16a698}
+  .answer-text{font-size:clamp(15px,1.5vw,17px);line-height:2.05;white-space:pre-wrap;overflow-wrap:anywhere;font-weight:510}
+  .answer-text.hidden{display:none}
+  .answer-placeholder{border:1px dashed #a5c4c4;border-radius:13px;padding:24px;text-align:center;background:#f8fcfb;color:#617c81;font-size:13px;line-height:1.75}
+  .answer-placeholder.hidden{display:none}
+  .controls{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+  .btn{border:0;border-radius:11px;padding:12px 15px;font-size:13px;font-weight:800;display:inline-flex;gap:8px;align-items:center;justify-content:center;transition:transform .12s,background .15s;text-align:center}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:#087b72}
+  .btn-secondary{border:1px solid var(--outline);background:#f7fafb;color:#254c5b}
+  .btn-secondary:hover{background:#ebf5f4}
+  .btn-mark{background:#ecf5f2;color:#0c756d;border:1px solid #c9e5df}
+  .btn-mark.done{background:#0c786f;color:white;border-color:#0c786f}
+  .navigation{background:#fff;padding:15px;border:1px solid var(--outline);border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .navigation .btn{min-width:120px}
+  .nav-status{font-weight:850;color:#617c88;font-size:13px;font-variant-numeric:tabular-nums}
+  .extras{background:#fff;border:1px solid var(--outline);border-radius:var(--radius);padding:20px;line-height:1.8;box-shadow:0 4px 16px rgba(15,42,63,.03)}
+  .extras h2{font-size:14px;margin:0 0 11px;color:var(--navy)}
+  .flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:9px 0;font-size:12px;color:var(--mute)}
+  .flow button{border:1px solid #d4e8e5;background:#eef8f6;border-radius:8px;color:#0c796d;font-size:11px;font-weight:800;padding:7px 9px}
+  .flow button:hover{background:#daefec}
+  .note{font-size:12px;color:#687d88;margin:15px 0 0;line-height:1.8}
+  footer{text-align:center;color:#81929b;font-size:11px;padding:6px 20px 24px;line-height:1.8}
+  .mobile-list-btn{display:none}
+  .sheet-view{display:none;background:#fff;border:1px solid var(--outline);border-radius:var(--radius);padding:20px}
+  .sheet-view.open{display:block}
+  .sheet-title{font-size:18px;margin:0 0 16px}
+  .sheet-item{border-bottom:1px solid #e0e7e9;padding:19px 0}
+  .sheet-item:last-child{border:0}
+  .sheet-item .sheet-q{font-weight:850;font-size:16px;line-height:1.7;margin:0 0 11px}
+  .sheet-a{white-space:pre-wrap;line-height:1.95;font-size:14px}
+  .sheet-section{font-size:12px;color:#207e79;font-weight:850;margin:25px 0 0}
+  .toast{position:fixed;z-index:20;bottom:24px;left:50%;transform:translate(-50%,14px);background:#183c4c;color:white;padding:10px 16px;border-radius:11px;opacity:0;pointer-events:none;transition:.2s;font-size:12px;white-space:nowrap;max-width:calc(100% - 30px);overflow:hidden;text-overflow:ellipsis}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+  @media(max-width:800px){
+    .wrap{padding-left:16px;padding-right:16px}
+    .hero-inner{padding:25px 0 28px}
+    .hero-stats{padding:13px 15px;min-width:125px}
+    .stat-number{font-size:25px}
+    .layout{display:block}
+    .sidebar{position:relative;top:auto;max-height:none;margin-bottom:13px;display:none}
+    .sidebar.open{display:flex}
+    .question-list{max-height:47vh}
+    .mobile-list-btn{display:inline-flex}
+    .toolbar{gap:9px}
+    .toolbar-actions{margin-left:auto}
+    .question-card{min-height:auto}
+  }
+  @media(max-width:560px){
+    .hero-inner{gap:10px;align-items:flex-start}
+    .hero-stats{min-width:90px;padding:10px}
+    h1{font-size:21px}
+    .hero-desc{font-size:11px}
+    .eyebrow{font-size:10px}
+    .stat-number{font-size:23px}
+    .toolbar{padding:14px 0 11px}
+    .pills{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .pill{font-size:11px;padding:10px 4px}
+    .toolbar-actions{width:100%;justify-content:space-between}
+    .ghost{font-size:11px;padding:9px 11px}
+    .section-bar{padding:12px 15px}
+    .question-card{padding:20px 17px}
+    .question{font-size:21px}
+    .controls{gap:8px}
+    .controls .btn{flex:1 1 calc(50% - 5px);font-size:12px;padding:12px 9px}
+    .navigation{padding:11px}
+    .navigation .btn{min-width:0;padding:11px 12px;font-size:12px}
+    .nav-status{font-size:12px}
+  }
+  @media print{
+    .hero,.toolbar,.sidebar,.section-bar,.study-panel,.extras,.navigation,footer,.toast{display:none!important}
+    .wrap{max-width:none}
+    .layout{display:block}
+    .sheet-view{display:block!important;border:0!important;padding:0!important}
+    .sheet-item{page-break-inside:avoid}
+    body{background:white;color:black}
+  }
+  </style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">2027 新卒 · Interview Practice</div>
+      <h1>日本企画株式会社<br>一次面接・重要22問</h1>
+      <p class="hero-desc">প্রশ্ন–উত্তর আগের মতোই আছে · উত্তর লুকিয়ে অনুশীলন করো · 日本語音声</p>
+    </div>
+    <div class="hero-stats" aria-label="অনুশীলনের অগ্রগতি">
+      <div class="stat-number"><span id="doneCount">0</span><span style="opacity:.5;font-size:18px"> / 22</span></div>
+      <div class="stat-label">練習完了</div>
+      <div class="track"><div class="track-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="toolbar">
+    <div class="pills" role="group" aria-label="প্রশ্ন ফিল্টার">
+      <button class="pill active" id="filterAll" type="button" aria-pressed="true">সব প্রশ্ন 22</button>
+      <button class="pill" id="filterImportant" type="button" aria-pressed="false">★ গুরুত্বপূর্ণ</button>
+      <button class="pill" id="filterTodo" type="button" aria-pressed="false">বাকি প্রশ্ন</button>
+    </div>
+    <div class="toolbar-actions">
+      <button type="button" class="ghost mobile-list-btn" id="toggleList" aria-expanded="false">☷ প্রশ্ন তালিকা</button>
+      <button type="button" class="ghost" id="toggleSheet">☰ সব উত্তর দেখো</button>
+      <button type="button" class="ghost" id="printAll">⎙ PDF / Print</button>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="প্রশ্নের তালিকা">
+      <div class="sidebar-top">
+        <div class="sidebar-title"><span>質問リスト</span><span class="count" id="listCount">22 প্রশ্ন</span></div>
+        <input id="searchBox" class="search" type="search" autocomplete="off" placeholder="質問を検索 / প্রশ্ন খুঁজুন" aria-label="প্রশ্ন খুঁজুন">
+      </div>
+      <div class="question-list" id="questionList"></div>
+    </aside>
+    <div class="study-panel" id="studyPanel">
+      <div class="section-bar"><span class="section-name" id="sectionName">自己紹介</span><span class="section-count" id="sectionCount">01 / 22</span></div>
+      <article class="question-card">
+        <div class="card-overline"><span class="number-chip" id="numberChip">QUESTION 01</span><span class="important" id="starChip">★ 最重要</span></div>
+        <h2 class="question" id="questionText" lang="ja">自己紹介をお願いします。</h2>
+        <div class="answer-head"><span class="answer-label">回答（そのまま）</span></div>
+        <div class="answer-text hidden" id="answerText" lang="ja"></div>
+        <div class="answer-placeholder" id="answerPlaceholder">🎤 まず自分の言葉で答えてみよう<br>তারপর নিচের বাটনে ক্লিক করে উত্তর দেখো</div>
+        <div class="controls">
+          <button type="button" class="btn btn-primary" id="revealBtn" aria-expanded="false">◎ উত্তর দেখো</button>
+          <button type="button" class="btn btn-secondary" id="speakQuestion">♫ 質問を聞く</button>
+          <button type="button" class="btn btn-secondary" id="speakAnswer">♫ 回答を聞く</button>
+          <button type="button" class="btn btn-secondary" id="stopSpeech">■ 止める</button>
+          <button type="button" class="btn btn-mark" id="markBtn" aria-pressed="false">✓ প্র্যাকটিস শেষ</button>
+          <button type="button" class="btn btn-secondary" id="copyBtn">⧉ উত্তর কপি</button>
+        </div>
+      </article>
+      <div class="navigation">
+        <button type="button" class="btn btn-secondary" id="previousBtn">‹ আগের প্রশ্ন</button>
+        <div class="nav-status" id="pageText">1 / 22</div>
+        <button type="button" class="btn btn-primary" id="nextBtn">পরের প্রশ্ন ›</button>
+      </div>
+      <section class="extras">
+        <h2>面接の深掘り質問 — একটি উত্তর থেকে পরের প্রশ্ন</h2>
+        <div class="flow"><strong>志望動機</strong><button data-go="2">Q2</button> → <button data-go="3">Q3</button> → <button data-go="4">Q4</button> → <button data-go="5">Q5</button></div>
+        <div class="flow"><strong>AIチャットボット</strong><button data-go="10">Q10</button> → <button data-go="11">Q11</button> → <button data-go="12">Q12</button> → <button data-go="13">Q13</button></div>
+        <div class="flow"><strong>アルバイト</strong><button data-go="15">Q15</button> → <button data-go="16">Q16</button> → <button data-go="17">Q17</button></div>
+        <p class="note">※ Q12 ও Q16-তে 【 】 চিহ্নের জায়গায় তোমার বাস্তব অভিজ্ঞতা বসাতে হবে। 学歴について大学退学の理由や短所を聞かれた場合も、事実に基づいて答えてください。</p>
+      </section>
+    </div>
+  </div>
+  <section class="sheet-view" id="sheetView" aria-label="সব প্রশ্ন ও উত্তর">
+    <h2 class="sheet-title">一次面接｜22問・全質問と回答</h2>
+    <div id="allQuestions"></div>
+  </section>
+</main>
+<footer>個人学習用・非公式の面接練習ページ　｜　質問と回答の本文は元の22問から変更していません。<br>音声再生はブラウザーの日本語読み上げ機能を使用します。インターネット不要で表示できます。</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+const DATA = [{"id":1,"important":true,"question":"自己紹介をお願いします。","answer":"専門学校東京テクニカルカレッジの情報処理科で学んでおります。\n\n学校ではJavaやSQL、Webアプリケーション開発を学び、4人チームでAIチャットボットを制作しました。\n\nまた、高校時代からWeb制作を独学で学んできました。\n\n本日はどうぞよろしくお願いいたします。","section":"自己紹介"},{"id":2,"important":true,"question":"当社を志望した理由を教えてください。","answer":"私が御社を志望する理由は、社会を支えるシステム開発に携われることと、技術力だけでなく人間性も大切にする御社の考え方に魅力を感じたからです。\n\n御社のホームページを拝見し、50年以上の歴史があり、金融や官公庁など幅広い分野でシステム開発を行っていることを知りました。\n\n特に、Webアプリケーション開発の仕事がある点に強く魅力を感じました。\n\n私は専門学校でJavaやSQLを学び、4人チームでAIチャットボットを制作しました。\n\n入社後は、学んだ知識を活かし、新しい技術も積極的に学びながら、お客様から信頼されるエンジニアとして、長く御社に貢献したいと考えています。","section":"志望動機・会社への興味"},{"id":3,"important":true,"question":"当社に興味を持ったきっかけは何ですか？","answer":"御社に興味を持ったきっかけは、求人サイトで御社の採用情報を拝見し、Webアプリケーション開発の仕事があることを知ったことです。\n\n私は専門学校でJavaやOracleデータベース、Webアプリケーション開発について学んでいます。\n\nそのため、学んだ知識を御社の開発業務で活かせると感じ、強く興味を持ちました。\n\nその後、御社のホームページを拝見し、幅広い分野でシステム開発を行っていることを知り、さらに興味が深まりました。","section":"志望動機・会社への興味"},{"id":4,"important":true,"question":"なぜWebアプリケーション開発を希望しているのですか？","answer":"Webアプリケーション開発を希望する理由は、自分が作ったシステムを通じて、人々の生活や仕事を便利にしたいからです。\n\n高校時代からHTMLやCSS、JavaScriptを独学で学び、専門学校ではJavaやデータベースについて勉強しています。\n\nこれまで学んだ知識を活かして、利用する人の役に立つWebアプリケーションを開発したいと考えています。","section":"志望動機・会社への興味"},{"id":5,"important":true,"question":"なぜほかのIT企業ではなく、当社なのですか？","answer":"御社では、私が学んできたJavaやWebアプリケーション開発に関係する仕事に携われる点に魅力を感じています。\n\nまた、金融や官公庁など、社会にとって重要な分野を支えている点にも魅力を感じました。\n\nさらに、技術力だけでなく人間性も大切にする御社の考え方に共感し、長く貢献したいと考えています。","section":"志望動機・会社への興味"},{"id":6,"important":true,"question":"当社でどのような仕事をしたいですか？","answer":"私は、開発系の中でも特にWebアプリケーション開発の仕事に携わりたいと考えています。\n\nまずはプログラミングやテストなどの基本業務をしっかり身につけたいです。\n\n将来は、設計にも携われるシステムエンジニアになりたいと考えています。","section":"志望動機・会社への興味"},{"id":7,"important":false,"question":"人間性を大切にするという当社の考え方について、どう思いますか？","answer":"私は、技術力だけでなく、周りの人を尊重し、誠実に行動することも大切だと思います。\n\n日本語学校では、仲間と一緒に地域清掃のボランティアに参加しました。\n\nその経験から、協力することや、社会の役に立つ行動をすることの大切さを学びました。\n\n仕事でも人との信頼関係を大切にしたいと考えています。","section":"志望動機・会社への興味"},{"id":8,"important":true,"question":"専門学校ではどのようなことを学んでいますか？","answer":"専門学校ではJavaやSQL、Oracleデータベース、Webアプリケーション開発について学んでいます。\n\nまた、システム開発の流れやテストについても勉強しています。\n\n授業では、チームでAIチャットボットの制作にも取り組みました。","section":"専門学校・AIチャットボット"},{"id":9,"important":false,"question":"なぜ専門学校を選んだのですか？","answer":"私は、ITの知識を基礎から実践的に学びたいと考えたからです。\n\n専門学校では、プログラミングだけでなく、データベースやWebアプリケーション開発も学ぶことができます。\n\n将来ITエンジニアとして働くという自分の目標に合っていると考えました。","section":"専門学校・AIチャットボット"},{"id":10,"important":true,"question":"学生時代に最も力を入れたことは何ですか？","answer":"学生時代に最も力を入れたことは、4人チームでAIチャットボットを制作したことです。\n\n私は主に画面デザイン、Gemini APIとの接続、音声入力機能を担当しました。\n\nこの経験から、技術だけでなく、メンバーと協力してシステムを開発することの大切さを学びました。","section":"専門学校・AIチャットボット"},{"id":11,"important":true,"question":"AIチャットボットの開発で、あなた自身は何を担当しましたか？","answer":"私は主に、画面デザイン、Gemini APIとの接続、音声入力機能を担当しました。\n\n利用する人が使いやすい画面を考えながら、AIが質問に回答できる機能の開発に取り組みました。\n\nこの経験から、複数の技術を組み合わせてシステムを作る面白さを学びました。","section":"専門学校・AIチャットボット"},{"id":12,"important":true,"question":"開発で最も苦労したことと、解決方法を教えてください。","answer":"開発で最も苦労したことは、【実際に発生した問題】です。\n\nその問題を解決するために、【自分で調べたことや修正したこと】を行いました。\n\nこの経験から、問題が起きたときには原因を調べ、一つずつ確認しながら解決することの大切さを学びました。","section":"専門学校・AIチャットボット"},{"id":13,"important":true,"question":"チームで開発するとき、何を大切にしていますか？","answer":"私は、メンバーとのコミュニケーションと情報共有を大切にしています。\n\nAIチャットボットの制作では、4人で協力して開発に取り組みました。\n\n仕事でも報告・連絡・相談を大切にし、チームの一員として責任を持って取り組みたいです。","section":"専門学校・AIチャットボット"},{"id":14,"important":false,"question":"一人で最後までやり遂げた経験はありますか？","answer":"はい。高校時代からWeb制作を独学で学び、Fiverrで約1年間、Web制作の仕事にも取り組みました。\n\n分からないことがあっても、自分で調べながら学習を続けました。\n\nこの経験から、自分から行動し、最後まで努力することの大切さを学びました。","section":"専門学校・AIチャットボット"},{"id":15,"important":true,"question":"アルバイトではどのような仕事をしていますか？","answer":"ドン・キホーテでアルバイトをしています。\n\n主にレジ業務、接客、商品のご案内、免税対応などを担当しています。\n\nお客様と接する中で、相手の立場に立って考え、分かりやすく説明することの大切さを学びました。","section":"アルバイト・強み"},{"id":16,"important":true,"question":"アルバイトで大変だったことは何ですか？","answer":"アルバイトで大変だったことは、【実際に大変だった業務や出来事】です。\n\nそのときは、【自分が実際に行った対応や工夫】をしました。\n\nこの経験から、【実際に学んだこと】の大切さを学びました。","section":"アルバイト・強み"},{"id":17,"important":true,"question":"あなたの強みは何ですか？","answer":"私の強みは、自分から積極的に学び、最後まで努力できることです。\n\n高校時代からWeb制作を独学で学び、専門学校でもJavaやSQLなど、新しい知識を身につけてきました。\n\n入社後もこの強みを活かし、積極的に学びながら仕事に取り組みたいです。","section":"アルバイト・強み"},{"id":18,"important":true,"question":"なぜ日本に留学したのですか？","answer":"私が日本を選んだ理由は、日本の高い技術力と製品の品質の高さに魅力を感じたからです。\n\n母国バングラデシュでも、日本の自動車や電化製品は人気があり、多くの人に信頼されています。\n\n私も日本の技術に興味を持ち、日本でITを学びたいと考えるようになりました。\n\nそして、将来は日本のIT企業で働きたいと思い、留学を決めました。","section":"外国人留学生・将来"},{"id":19,"important":false,"question":"日本語で仕事をすることに問題はありませんか？","answer":"はい。専門学校の授業やアルバイトで、日常的に日本語を使っています。\n\nアルバイトでは、商品のご案内や免税対応なども日本語で行っています。\n\nまた、JLPT N2にも合格しました。\n\n仕事で分からない専門用語があれば、確認しながら正確にコミュニケーションを取りたいです。","section":"外国人留学生・将来"},{"id":20,"important":true,"question":"日本で長く働きたいと考えていますか？","answer":"はい。私は日本でITエンジニアとして長く働きたいと考えています。\n\n日本で学んだ知識を活かし、技術力を高めながら、お客様から信頼されるエンジニアになりたいです。\n\n御社でも経験を積み、長く貢献したいと考えています。","section":"外国人留学生・将来"},{"id":21,"important":true,"question":"5年後、10年後はどのようなエンジニアになりたいですか？","answer":"5年後には、JavaやWebアプリケーション開発の経験を積み、開発やテスト、設計などに幅広く対応できるエンジニアになりたいです。\n\n10年後には、お客様の要望を理解し、システムの提案や設計にも携わりながら、後輩の育成やチームにも貢献できるエンジニアになりたいと考えています。","section":"外国人留学生・将来"},{"id":22,"important":true,"question":"最後に何か質問はありますか？","answer":"御社でWebアプリケーション開発の仕事に携わるために、入社前に特に勉強しておくとよい技術や知識があれば、教えていただきたいです。","section":"逆質問"}];
+const STORAGE = 'interview_nkc_22_practice_v1';
+const $ = id => document.getElementById(id);
+let currentId = 1, filter = 'all', search = '', revealed = false, sheetOpen = false;
+let completed = new Set();
+try{completed=new Set(JSON.parse(localStorage.getItem(STORAGE)||'[]').filter(n=>Number.isInteger(n)&&n>=1&&n<=22))}catch(e){}
+let toastTimer;
+function toast(message){const el=$('toast');el.textContent=message;el.classList.add('on');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('on'),2100)}
+function save(){try{localStorage.setItem(STORAGE,JSON.stringify([...completed]))}catch(e){} updateProgress()}
+function updateProgress(){$('doneCount').textContent=completed.size;$('progressFill').style.width=(completed.size/DATA.length*100)+'%'}
+function filtered(){return DATA.filter(q=>(filter==='all'||(filter==='important'&&q.important)||(filter==='todo'&&!completed.has(q.id)))&&(!search||q.question.toLocaleLowerCase().includes(search)||q.answer.toLocaleLowerCase().includes(search)||q.section.toLocaleLowerCase().includes(search)))}
+function renderList(){
+ const list=$('questionList');list.replaceChildren();const rows=filtered();$('listCount').textContent=rows.length+' প্রশ্ন';let last='';
+ if(!rows.length){const e=document.createElement('p');e.className='empty';e.textContent='কোনো প্রশ্ন পাওয়া যায়নি';list.append(e);return}
+ for(const q of rows){
+  if(q.section!==last){const label=document.createElement('div');label.className='group-label';label.textContent=q.section;list.append(label);last=q.section}
+  const button=document.createElement('button');button.type='button';button.className='q-entry'+(q.id===currentId?' active':'');button.setAttribute('aria-current',q.id===currentId?'true':'false');
+  const num=document.createElement('span');num.className='q-num';num.textContent=String(q.id).padStart(2,'0');
+  const name=document.createElement('span');name.className='q-text';name.textContent=q.question;name.lang='ja';
+  const flags=document.createElement('span');flags.className='q-flags';flags.textContent=completed.has(q.id)?'✓':q.important?'★':'';
+  button.append(num,name,flags);button.onclick=()=>{navigate(q.id);if(innerWidth<=800){$('sidebar').classList.remove('open');$('toggleList').setAttribute('aria-expanded','false')}};list.append(button)
+ }
+ const active=list.querySelector('.q-entry.active');if(active) active.scrollIntoView({block:'nearest'});
+}
+function stopSpeaking(){if('speechSynthesis' in window) speechSynthesis.cancel()}
+function navigate(id){
+ const q=DATA.find(x=>x.id===id);if(!q)return;stopSpeaking();currentId=id;revealed=false;
+ $('sectionName').textContent=q.section;$('sectionCount').textContent=String(q.id).padStart(2,'0')+' / 22';$('numberChip').textContent='QUESTION '+String(q.id).padStart(2,'0');
+ $('starChip').hidden=!q.important;$('questionText').textContent=q.question;$('answerText').textContent=q.answer;
+ $('pageText').textContent=q.id+' / 22';$('previousBtn').disabled=q.id===1;$('nextBtn').disabled=q.id===22;
+ updateReveal();updateMark();renderList();
+}
+function updateReveal(){$('answerText').classList.toggle('hidden',!revealed);$('answerPlaceholder').classList.toggle('hidden',revealed);$('revealBtn').textContent=revealed?'◉ উত্তর লুকাও':'◎ উত্তর দেখো';$('revealBtn').setAttribute('aria-expanded',String(revealed))}
+function updateMark(){const done=completed.has(currentId);$('markBtn').classList.toggle('done',done);$('markBtn').textContent=done?'✓ প্র্যাকটিস হয়েছে':'✓ প্র্যাকটিস শেষ';$('markBtn').setAttribute('aria-pressed',String(done))}
+function speak(text){if(!('speechSynthesis' in window)){toast('এই ব্রাউজারে স্পিকার সাপোর্ট নেই');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';u.rate=.87;u.pitch=1;const voices=speechSynthesis.getVoices();const ja=voices.find(v=>v.lang.toLowerCase()==='ja-jp')||voices.find(v=>v.lang.startsWith('ja'));if(ja)u.voice=ja;speechSynthesis.speak(u)}
+function setFilter(kind){filter=kind;for(const k of ['All','Important','Todo']){const active=k.toLowerCase()===kind;const b=$('filter'+k);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))}renderList();const choices=filtered();if(choices.length&&!choices.some(q=>q.id===currentId))navigate(choices[0].id)}
+function renderSheet(){const root=$('allQuestions');root.replaceChildren();let previous='';for(const q of DATA){
+ if(q.section!==previous){const h=document.createElement('h3');h.className='sheet-section';h.textContent=q.section;root.append(h);previous=q.section}
+ const article=document.createElement('article');article.className='sheet-item';const title=document.createElement('p');title.className='sheet-q';title.textContent=q.id+'. '+(q.important?'★ ':'')+q.question;title.lang='ja';const answer=document.createElement('div');answer.className='sheet-a';answer.textContent=q.answer;answer.lang='ja';article.append(title,answer);root.append(article)
+}}
+$('revealBtn').onclick=()=>{revealed=!revealed;updateReveal()};
+$('previousBtn').onclick=()=>navigate(currentId-1);
+$('nextBtn').onclick=()=>navigate(currentId+1);
+$('markBtn').onclick=()=>{completed.has(currentId)?completed.delete(currentId):completed.add(currentId);save();updateMark();renderList()};
+$('speakQuestion').onclick=()=>speak(DATA[currentId-1].question);
+$('speakAnswer').onclick=()=>{revealed=true;updateReveal();speak(DATA[currentId-1].answer)};
+$('stopSpeech').onclick=stopSpeaking;
+$('copyBtn').onclick=async()=>{const q=DATA[currentId-1];try{await navigator.clipboard.writeText(q.question+'\n\n'+q.answer);toast('প্রশ্ন ও উত্তর কপি হয়েছে')}catch(e){toast('কপি করা যায়নি — উত্তর সিলেক্ট করে কপি করো')}};
+$('filterAll').onclick=()=>setFilter('all');$('filterImportant').onclick=()=>setFilter('important');$('filterTodo').onclick=()=>setFilter('todo');
+$('searchBox').oninput=e=>{search=e.target.value.toLocaleLowerCase().trim();renderList()};
+$('toggleList').onclick=()=>{const open=$('sidebar').classList.toggle('open');$('toggleList').setAttribute('aria-expanded',String(open))};
+$('toggleSheet').onclick=()=>{sheetOpen=!sheetOpen;$('sheetView').classList.toggle('open',sheetOpen);$('studyPanel').style.display=sheetOpen?'none':'';$('toggleSheet').textContent=sheetOpen?'▣ প্র্যাকটিস মোড':'☰ সব উত্তর দেখো';if(sheetOpen){renderSheet();$('sheetView').scrollIntoView({behavior:'smooth',block:'start'})}else{$('studyPanel').scrollIntoView({behavior:'smooth',block:'start'})}};
+$('printAll').onclick=()=>{renderSheet();window.print()};
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{if(sheetOpen)$('toggleSheet').click();navigate(+b.dataset.go);$('studyPanel').scrollIntoView({behavior:'smooth',block:'start'})});
+document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||['INPUT','TEXTAREA','BUTTON','SELECT'].includes(document.activeElement.tagName))return;if(event.key==='ArrowRight'&&currentId<22)navigate(currentId+1);else if(event.key==='ArrowLeft'&&currentId>1)navigate(currentId-1);else if(event.key===' '){event.preventDefault();revealed=!revealed;updateReveal()}});
+window.addEventListener('beforeunload',stopSpeaking);
+updateProgress();navigate(1);
+</script>
+</body>
+</html>
